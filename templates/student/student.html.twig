@@ -1,0 +1,28 @@
+<h1> hellow</h1>
+<h1>Student</h1>
+{#<a href="{{ path('addstudent') }}">Add student</a>#}
+<table border="1">
+    <tr>
+        <td>nce</td>
+        <td>frstname</td>
+        <td>lstname</td>
+        <td>mail</td>
+
+    </tr>
+    {% for i in tabstudent %}
+        <tr>
+            <td>{{ i.nce }}</td>
+            <td>{{ i.frstname }}</td>
+            <td>{{ i.lstname }}</td>
+            <td>{{ i.mail }}</td>
+
+
+
+            {#           <td><a href="{{ path('updateClassroom',{'id':i.id}) }}">Update</a>#}
+
+            {#               <a href="{{ path('removeClassroom',{'id':i.id}) }}">Remove</a></td>#}
+
+
+        </tr>
+    {% endfor %}
+</table>

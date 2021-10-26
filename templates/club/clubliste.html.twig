@@ -1,0 +1,25 @@
+<h1>Club</h1>
+{#<a href="{{ path('addClassroom') }}">Add Classroom</a>#}
+<table border="1">
+    <tr>
+        <td>nom</td>
+        <td>membres</td>
+        <td>datecreation</td>
+
+    </tr>
+    {% for i in FormClub %}
+        <tr>
+            <td>{{ i.nom }}</td>
+            <td>{{ i.membres }}</td>
+            <td>{{ i.datecreation }}</td>
+            <td>{{ i.Action }}</td>
+
+
+            {#           <td><a href="{{ path('updateClassroom',{'id':i.id}) }}">Update</a>#}
+
+            {#               <a href="{{ path('removeClassroom',{'id':i.id}) }}">Remove</a></td>#}
+
+
+        </tr>
+    {% endfor %}
+</table>

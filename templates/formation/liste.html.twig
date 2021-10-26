@@ -1,0 +1,22 @@
+<h1> la liste des formation</h1>
+<table>
+    <tr>
+        <td>ref</td>
+        <td>nom</td>
+        <td>ref</td>
+        <td>ref</td>
+        <td>ref</td>
+        <td>ref</td>
+    </tr>
+{%for f in formationliste%}
+    <tr>
+        <td>((f.ref))</td>
+        <td>((f.Titer))</td>
+        <td>ref</td>
+        <td>ref</td>
+        <td>ref</td>
+        <td>ref</td>
+    </tr>
+{% endfor}
+</table>
+nbr formation {{ formationliste | lenght }}
